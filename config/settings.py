@@ -19,9 +19,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 print(f"base dir: {BASE_DIR}")
-STATIC_ROOT = join(BASE_DIR, 'website\static')
+STATIC_ROOT = join(BASE_DIR, 'staticfiles')
 print(f"static dir: {STATIC_ROOT}")
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    join(BASE_DIR, 'static'),
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
