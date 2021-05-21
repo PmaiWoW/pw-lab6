@@ -23,7 +23,7 @@ STATIC_URL = 'website/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    join(BASE_DIR, 'website\static'),
+    join(BASE_DIR, 'website/static'),
 )
 
 # Quick-start development settings - unsuitable for production
