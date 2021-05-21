@@ -18,8 +18,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-print(f"base dir: {BASE_DIR}")
-STATIC_ROOT = join(BASE_DIR, 'staticfiles')
+# print(f"base dir: {BASE_DIR}")
+STATIC_ROOT = join(BASE_DIR, 'website\staticfiles')
 print(f"static dir: {STATIC_ROOT}")
 STATIC_URL = '/static/'
 
