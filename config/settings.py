@@ -19,12 +19,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = join(BASE_DIR, 'staticfiles')
-STATIC_URL = 'website/static/'
+print(f"static root {STATIC_ROOT}")
+STATIC_URL = '/static/'
+
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    join(BASE_DIR, 'website/static'),
+    join(BASE_DIR, 'website\static'),
 )
+for item in STATICFILES_DIRS:
+    print(f"staticfiles_dirs element: {item}")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -33,7 +37,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = 'django-insecure-=f%%b6n+_y6ty3x51))#!-ym2r98s%290&(3ufrki6bd4n7u%g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
