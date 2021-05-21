@@ -6,14 +6,13 @@ from django.shortcuts import render
 
 def home_page_view(request):
     interestsList = [
-            "Modelação 3D", "Texturização", "Programação",
+            "Modelação e Texturização 3D",
             "Inteligência artificial", "Realidade virtual",
             "Desenvolvimento de videojogos"
         ]
     context = {
         'hour': datetime.datetime.now(),
         'date': datetime.date.today(),
-        'name': "Pedro",
         'interests': interestsList,
         'interestsLen': len(interestsList)
     }
