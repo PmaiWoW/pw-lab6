@@ -18,11 +18,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-STATIC_ROOT = join(BASE_DIR, 'website')
+print(f"base dir: {BASE_DIR}")
+STATIC_ROOT = join(BASE_DIR, 'website\static')
+print(f"static dir: {STATIC_ROOT}")
 STATIC_URL = '/static/'
-
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
