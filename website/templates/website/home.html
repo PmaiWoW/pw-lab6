@@ -8,9 +8,9 @@
     <p>Página Home do website.</p>
 
     {% if hora < 12 %}
-        <p>Bom dia, são {{ hour }} horas do dia {{ date }}</p>
+        <p>Bom dia, a hora e data é {{ dateAndHour }}</p>
     {%  else %}
-        <p>Bom tarde, são {{ hour }} horas do dia {{ date }}</p>
+        <p>Bom tarde, a hora e data é {{ dateAndHour }}</p>
     {% endif %}
 
     <p>Esta página serve de introdução ao website.</p>
