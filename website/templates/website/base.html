@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {%  load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Primeiro website com Django</h1>
+        <p>O primeiro site com Django</p>
+        <nav>
+            <a href="home" class="btn btn-info">Home</a>
+            <a href="contacts" class="btn btn-info">Contacts</a>
+            <a href="about" class="btn btn-info">About</a>
+        </nav>
+    </header>
+    <article class="container">
+        <main class="col-sm-6">
+            {% block main %}
+            {% endblock main %}
+        </main>
+        <aside class="col-sm-6">
+            {% load static %}
+            <img src="{% static 'website/images/image.png' %}">
+        </aside>
+    </article>
+    <footer>Primeiro site com django e bootstrap</footer>
+</body>
+</html>
