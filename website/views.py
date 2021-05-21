@@ -11,7 +11,7 @@ def home_page_view(request):
             "Desenvolvimento de videojogos"
         ]
     context = {
-        'hour': datetime.time.hour,
+        'hour': datetime.datetime.hour,
         'date': datetime.date.today(),
         'interests': interestsList,
         'interestsLen': len(interestsList)
